@@ -1,0 +1,65 @@
+README : Simulation de Mouvement Brownien et Applications
+Introduction
+
+Ce projet consiste en plusieurs simulations utilisant des processus stochastiques, notamment le mouvement brownien et les modèles financiers basés sur des mouvements brownien et trinomial. L'objectif est de simuler différentes trajectoires et d'examiner des caractéristiques telles que l'espérance, la variance et d'autres statistiques.
+Exercices de Simulation
+Exercice 1 : Simulation du Mouvement Brownien
+
+    Simulation de Trajectoires du Mouvement Brownien
+    Nous simulons des trajectoires de mouvement brownien en utilisant la méthode de Monte Carlo avec des incréments aléatoires. Un graphique est généré pour afficher les trajectoires obtenues.
+        Paramètres :
+            Temps total : T = 2
+            Nombre de pas de temps : N = 1000
+            Nombre de simulations : Nmc = 1000
+        Résultats : Affichage des trajectoires et calcul de probabilités, comme P[|W_T| < 0.5].
+
+Exercice 2 : Calcul de l'Espérance et de la Variance
+
+    Espérance et Variance de W(T)
+    Nous simulons des trajectoires et calculons l'espérance et la variance de W(T) pour un mouvement brownien à un instant donné T.
+        Paramètres :
+            Temps : T = 5
+            Nombre de pas de temps : N = 10000
+            Nombre de simulations : Nmc = 1000
+        Résultats : Affichage de l'espérance et de la variance de W(T).
+
+Exercice 3 : Transformation de Mouvement Brownien
+
+    Transformation du Mouvement Brownien
+    Le but est de simuler une transformation du mouvement brownien en une nouvelle variable B_t = W(t)/c. Cette transformation est étudiée en comparant l'espérance et la variance de B(T).
+        Paramètres :
+            Temps total : T = 3
+            Paramètre de transformation : c = 2
+        Résultats : Calcul de l'espérance et de la variance de B(T).
+
+Exercice 4 : Simulation avec Volatilité Locale et Taux d'Intérêt
+
+    Modélisation Stochastique d'un Actif
+    Dans ce cas, nous simulons le prix d'un actif avec un modèle de volatilité locale et un taux d'intérêt stochastique en utilisant une méthode de simulation de Monte Carlo. La densité empirique du prix à l'horizon final S(T) est aussi tracée.
+        Paramètres :
+            Temps total : T = 2
+            Volatilité et taux d'intérêt stochastiques
+            Nombre de simulations : Nmc = 1000
+        Résultats : Affichage de la densité empirique de S(T) et de quelques trajectoires simulées.
+
+Exercice 5 : Aversion au Risque et Utilité
+
+    Maximisation de l'Utilité
+    Dans cet exercice, nous simulons un modèle financier avec un agent ayant une aversion au risque et optimisons son utilité en fonction de ses décisions de portefeuilles (theta), qui impacte la quantité d'actifs risqués qu'il détient.
+        Paramètres :
+            Paramètres financiers comme la volatilité, le rendement attendu, etc.
+            Nombre de simulations : Nmc = 1000
+        Résultats : Calcul de l'espérance d'utilité E[U(MT)] en fonction de theta et identification du theta optimal.
+
+Exercice 6 : Simulation d'un Actif avec un Arbre Trinomial
+
+    Simulation d'un Actif à l'aide d'un Arbre Trinomial
+    Ce modèle utilise un arbre trinomial pour simuler les trajectoires d'un actif sous l'effet de volatilité stochastique, en estimant l'espérance de S(T) à partir de la simulation.
+        Paramètres :
+            Taux sans risque et volatilité
+            Nombre de simulations : Nmc = 20
+        Résultats : Tracé des trajectoires simulées de l'actif et calcul de E[S(T)].
+
+Conclusion
+
+Le projet explore des simulations de modèles stochastiques de processus brownien et des modèles financiers. Il permet de mieux comprendre les concepts de variance, d'espérance, ainsi que l'impact de différents paramètres sur des processus aléatoires. Ces outils peuvent être utilisés pour des applications en finance et en mathématiques appliquées.
